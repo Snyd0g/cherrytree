@@ -67,9 +67,10 @@ sudo apt install build-essential libxml2-utils cmake libgtkmm-3.0-dev libgtksour
 Get cherrytree source, compile and run:
 ```sh
 git clone https://github.com/giuspen/cherrytree.git
+cd cherrytree
 git submodule update --init
-mkdir cherrytree/build
-cd cherrytree/build
+mkdir build
+cd build
 cmake ../
 make -j$(nproc --all)
 ./build/cherrytree
